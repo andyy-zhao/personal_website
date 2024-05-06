@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables */
+:root {
+    --CoralRed: lightpink;
+    --MintGreen: rgb(204, 255, 229);
+    --Ocean: lightblue;
+    --SandyYellow: palegoldenrod;
+    --Purp: lavender;
+}
+
+/* Classes */
+.yellow { background: var(--SandyYellow); }
+.blue { background: var(--Ocean); }
+.red { background: var(--CoralRed); }
+.green { background: var(--MintGreen); }
+.purple { background-color: var(--Purp); }
+
+.highlight { padding: 1.5px 5px; }
+
+/* Headings */
+h1, h2, h3, h4, h5 { margin: 0; }
+
+/* Links */
+a { color: inherit; text-decoration: none; }
+
+/* Attributes */
+[noMargin] { margin: 0; }
+
+/* Containers */
+[data-style-container] {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: relative;
+    top: 20px;
+    animation: fadeUp ease-in 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+    100% { transform: translateY(0); }
+}

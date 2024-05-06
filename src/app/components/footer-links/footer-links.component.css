@@ -1,0 +1,25 @@
+:root {
+    --Hover: black; /* Define custom property */
+  }
+  
+  [data-style-footer-links] {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: absolute;
+      margin: 50px 0 30px;
+      width: 100%;
+  
+      i {
+          text-decoration: none;
+          color: lightgray;
+          margin: 0 10px;
+          transition: color 500ms; /* Use property name instead of transition duration */
+          cursor: pointer;
+  
+          &:hover {
+              color: var(--Hover); /* Use var() to reference custom property */
+          }
+      }
+  }
+  

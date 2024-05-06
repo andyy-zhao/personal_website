@@ -1,0 +1,79 @@
+<div data-style-container="experience">
+    <div data-style-title>
+        <h1>experience</h1>
+        <h3>here's some stuff i've done</h3>
+    </div>
+    <div data-style-experiences>
+        <div data-style-experience="desktop"
+            [attr.data-style-open]="isDisplaying(0) ? 'open' : 'closed'"
+            style="background-image: url(../../../assets/headshot2.jpg)"
+            (click)="toggleDescription(0)">
+            <div>
+                <h1> Manulife/John Hancock</h1>
+                <h4>Software Engineer - (insert short description here)</h4>
+            </div>
+            <div desc *ngIf="isDisplaying(0)">
+                <div>May - Present 2024, Toronto CAN</div>
+                <div><i tech class="fab fa-js-square"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i><i tech class="fab fa-aws"></i></div>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+                The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+                Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:. (DESCRIPTION)
+            </div>
+            <i arrow *ngIf="!isDisplaying(0)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(0)" class="fas fa-chevron-up"></i>
+        </div>
+        <div data-style-experience="desktop"
+            [attr.data-style-open]="isDisplaying(1) ? 'open' : 'closed'"
+            style="background-image: url(../../../assets/headshot2.jpg)"
+            (click)="toggleDescription(1)">
+            <div>
+                <h1>EzeeAssist</h1>
+                <h4>Software Engineer - LMS Ads Delivery Optimization</h4>
+            </div>
+            <div desc *ngIf="isDisplaying(1)">
+                <div>September - December 2023, Toronto CAN</div>
+                <div><i tech class="fab fa-js-square"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i><i tech class="fab fa-aws"></i></div>
+                Chatbot Development. (DESCRIPTION)
+            </div>
+            <i arrow *ngIf="!isDisplaying(1)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(1)" class="fas fa-chevron-up"></i>
+        </div>
+        <div data-style-experience="desktop"
+            [attr.data-style-open]="isDisplaying(2) ? 'open' : 'closed'"
+            style="background-image: url(../../../assets/headshot2.jpg)"
+            (click)="toggleDescription(2)">
+            <div>
+                <h1>Allstate Insurance</h1>
+                <h4>Application Developer - LMS Ads Delivery Optimization</h4>
+            </div>
+            <div desc *ngIf="isDisplaying(2)">
+                <div>May - August 2022, Toronto CAN</div>
+                <div><i tech class="fab fa-js-square"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i><i tech class="fab fa-aws"></i></div>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+                The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+                Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:. (DESCRIPTION)
+            </div>
+            <i arrow *ngIf="!isDisplaying(2)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(2)" class="fas fa-chevron-up"></i>
+        </div>
+        <div data-style-experience="desktop"
+            [attr.data-style-open]="isDisplaying(3) ? 'open' : 'closed'"
+            style="background-image: url(../../../assets/headshot2.jpg)"
+            (click)="toggleDescription(3)">
+            <div>
+                <h1>Benevity</h1>
+                <h4>Application Developer - LMS Ads Delivery Optimization</h4>
+            </div>
+            <div desc *ngIf="isDisplaying(3)">
+                <div>May - August 2021, Toronto CAN</div>
+                <div><i tech class="fab fa-js-square"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i><i tech class="fab fa-aws"></i></div>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. 
+                The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+                Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with: (DESCRIPTION)
+            </div>
+             <i arrow *ngIf="!isDisplaying(3)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(3)" class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+    <app-footer-links></app-footer-links>
+</div>

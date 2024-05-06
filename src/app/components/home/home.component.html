@@ -1,0 +1,21 @@
+<div data-style-container="home">
+    <div data-style-title>
+        <h1>hey there</h1>
+        <h3>click something to learn more about me!</h3>
+    </div>
+    <div class="desktop">
+        <div data-style-banner="me" routerLink="me" (click)="navigateToUrl('/about')">
+            <h3>me.</h3>
+        </div>
+        <div data-style-banner="projects" routerLink="projects" (click)="navigateToUrl('/projects')">
+            <h3>projects.</h3>
+        </div>
+        <div data-style-banner="experience" routerLink="experience" (click)="navigateToUrl('/experience')">
+            <h3>experience.</h3>
+        </div>
+        <div data-style-banner="volleyball" routerLink="volleyball" (click)="navigateToUrl('/volleyball')">
+            <h3>volleyball.</h3>
+        </div>
+    </div>
+    <app-footer-links></app-footer-links>
+</div>

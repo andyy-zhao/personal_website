@@ -1,0 +1,60 @@
+<div data-style-container="about">
+    <div data-style-title>
+        <h1>Andy Zhao</h1>
+        <h3 (click)="newMessage()" style="cursor: pointer; user-select: none">{{ messages[message] }}</h3>
+    </div>
+    <div [ngClass]="desktop" class="desktop">
+        <div data-style-description>
+            <p>Hello 👋 My name's Andy, pleasure to meet you. Here's my brief summary:</p>
+            <table>
+                <tbody>
+                    <tr data-style-info [ngClass]="desktopDesc">
+                        <td><div data-style-subtitle="hometown">Hometown</div></td>
+                        <td>Whitchurch-Stouffville, Ontario 🍁</td> 
+                    </tr>
+                    <tr data-style-info [ngClass]="desktopDesc">
+                        <td><div data-style-subtitle="education">Education</div></td>
+                        <td>4A Computer Science, University of Waterloo</td> 
+                    </tr>
+                    <tr data-style-info [ngClass]="desktopDesc">
+                        <td><div data-style-subtitle="skills">Skills</div></td>
+                        <td>React, Node.js, Django, Python, JavaScript, C++, Git, Docker, HTML/CSS</td> 
+                    </tr>
+                    <tr data-style-info [ngClass]="desktopDesc">
+                        <td><div data-style-subtitle="interests">Interests</div></td>
+                        <td>Ping Pong, Cooking, Volleyball, Piano</td> 
+                    </tr>
+                </tbody>
+            </table> 
+            <p>Creating and discovering is what excites me. At the moment, I just started an internship at Manulife/John Hancock as a 
+                <b>Software Engineering intern</b> in Toronto! If you have any opportunities for a 
+                <b>Fall 2024 Internship</b>, please reach out!
+            </p>
+            <p>If you're interested in chatting,
+                come reach out to me on <a href="https://www.linkedin.com/in/zhao-andy/" target="_blank"><u>LinkedIn</u></a>!</p>
+        </div>
+        <div data-style-picture-wall>
+            <div data-style-picture-column>
+                <div data-style-picture="even" id="one"></div>
+                <div data-style-picture="even" id="two"></div>
+                <div data-style-picture="even" id="three"></div>
+            </div>
+            <div data-style-picture-column>
+                <div data-style-picture="odd" id="four"></div>
+                <div data-style-picture="odd" id="five"></div>
+                <div data-style-picture="odd" id="six"></div>
+            </div>
+            <div data-style-picture-column>
+                <div data-style-picture="even" id="seven"></div>
+                <div data-style-picture="even" id="eight"></div>
+                <div data-style-picture="even" id="nine"></div>
+            </div>
+            <div data-style-picture-column>
+                <div data-style-picture="odd" id="ten"></div>
+                <div data-style-picture="odd" id="eleven"></div>
+                <div data-style-picture="odd" id="twelve"></div>
+            </div>
+        </div>
+    </div>
+    <app-footer-links></app-footer-links>
+</div>

@@ -1,0 +1,64 @@
+.menuButton {
+    height: 13px;
+    width: 13px;
+    z-index: 100;
+    border: 1px solid black;
+    background: white;
+    opacity: 0.75;
+    border-radius: 50%;
+    transition: 500ms;
+}
+.menuButton:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    background: black;
+    transition: 500ms;
+}
+
+[data-style-platform~="desktop"] {
+    width: 100%;
+    position: relative;
+}
+[data-style-platform~="desktop"] .menuButton {
+    right: 10px;
+    top: 8px;
+    position: absolute;
+}
+[data-style-platform~="desktop"] .menu {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    z-index: 0;
+}
+[data-style-platform~="desktop"] .menu a {
+    color: lightgray;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: 200ms;
+}
+[data-style-platform~="desktop"] .menu a:hover {
+    color: black;
+    text-decoration: overline;
+    cursor: pointer;
+    transition: 200ms;
+}
+[data-style-platform~="desktop"] .here {
+    z-index: 10;
+    visibility: visible;
+    opacity: 1;
+    right: 30px;
+    transition: 500ms;
+}
+[data-style-platform~="desktop"] .notHere {
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms;  
+    right: 0px;
+}
+[data-style-nav-menu] {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+}

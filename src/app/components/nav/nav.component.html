@@ -1,0 +1,14 @@
+<div class="nav-container">
+    <div data-style-platform="desktop" id="nav-desktop">
+        <div style="background: white">
+            <div class="menuButton" (click)="toggleMenu()"></div>
+        </div>
+        <div [ngClass]="isMenuOpen ? 'menu here' : 'menu notHere'">
+            <a routerLink="/" (click)="switchTabs('')">home.</a>
+            <a routerLink="/me" (click)="switchTabs('about')">me.</a>
+            <a routerLink="/projects" (click)="switchTabs('projects')">projects.</a>
+            <a routerLink="/experience" (click)="switchTabs('experience')">experience.</a>
+            <a routerLink="/volleyball" (click)="switchTabs('volleyball')">volleyball.</a>
+        </div>
+    </div>
+</div>
