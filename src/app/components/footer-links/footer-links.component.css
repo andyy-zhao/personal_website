@@ -1,5 +1,5 @@
 :root {
-    --Hover: black; /* Define custom property */
+    --Hover: black;
   }
   
   [data-style-footer-links] {
@@ -14,11 +14,11 @@
           text-decoration: none;
           color: lightgray;
           margin: 0 10px;
-          transition: color 500ms; /* Use property name instead of transition duration */
+          transition: color 500ms;
           cursor: pointer;
   
           &:hover {
-              color: var(--Hover); /* Use var() to reference custom property */
+              color: var(--Hover);
           }
       }
   }

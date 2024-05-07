@@ -20,6 +20,7 @@ export class NavComponent {
   }
 
   public switchTabs = (goTo: string) => {
+    this.isMenuOpen = false;
     this.router.navigateByUrl(goTo);
   }
 
