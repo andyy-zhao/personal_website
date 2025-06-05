@@ -11,7 +11,7 @@ import { FooterLinksComponent } from '../footer-links/footer-links.component';
 })
 
 export class ExperienceComponent {
-  isDisplayingDescription = [false, false, false, false];
+  isDisplayingDescription = [false, false, false, false, false];
 
   toggleDescription(index: number) {
       this.isDisplayingDescription[index] = !this.isDisplayingDescription[index];
