@@ -24,14 +24,14 @@
             <i arrow *ngIf="isDisplaying(0)" class="fas fa-chevron-up"></i>
         </div>
         <div data-style-experience="desktop"
-            [attr.data-style-open]="isDisplaying(0) ? 'open' : 'closed'"
+            [attr.data-style-open]="isDisplaying(1) ? 'open' : 'closed'"
             style="background-image: url(../../../assets/headshot2.jpg)"
             (click)="toggleDescription(1)">
             <div>
                 <h1>Manulife/John Hancock</h1>
                 <h4>Software Engineer</h4>
             </div>
-            <div desc *ngIf="isDisplaying(0)">
+            <div desc *ngIf="isDisplaying(1)">
                 <div>May - August 2024, Toronto CAN</div>
                 <div><i tech class="fab fa-js-square"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i></div>
                 As a Software Engineer at Manulife Financial, I developed a web app to streamline workflows for over 1,000 employees, improving operational efficiency by
@@ -39,18 +39,18 @@
                  and automating key workflows. Additionally, I provisioned Azure Functions with private endpoints using Terraform, ensuring secure network configurations 
                  through virtual networks, DNS zone links, and access restrictions, resulting in a 30% reduction in deployment time.
             </div>
-            <i arrow *ngIf="!isDisplaying(0)" class="fas fa-chevron-down"></i>
-            <i arrow *ngIf="isDisplaying(0)" class="fas fa-chevron-up"></i>
+            <i arrow *ngIf="!isDisplaying(1)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(1)" class="fas fa-chevron-up"></i>
         </div>
         <div data-style-experience="desktop"
-            [attr.data-style-open]="isDisplaying(1) ? 'open' : 'closed'"
+            [attr.data-style-open]="isDisplaying(2) ? 'open' : 'closed'"
             style="background-image: url(../../../assets/costarica.jpeg)"
             (click)="toggleDescription(2)">
             <div>
                 <h1>EzeeAssist</h1>
                 <h4>Software Engineer - Franchisee Chatbot Development</h4>
             </div>
-            <div desc *ngIf="isDisplaying(1)">
+            <div desc *ngIf="isDisplaying(2)">
                 <div>September - December 2023, Toronto CAN</div>
                 <div><i tech class="fab fa-js-square"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i><i tech class="fab fa-aws"></i></div>
                 I led backend development for a chatbot system serving thousands of franchisee companies, 
@@ -60,18 +60,18 @@
                 I also implemented robust data pipelines with Amazon SNS and SQS to enable real-time synchronization 
                 of critical data across microservices, ensuring optimal performance and seamless operations.
             </div>
-            <i arrow *ngIf="!isDisplaying(1)" class="fas fa-chevron-down"></i>
-            <i arrow *ngIf="isDisplaying(1)" class="fas fa-chevron-up"></i>
+            <i arrow *ngIf="!isDisplaying(2)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(2)" class="fas fa-chevron-up"></i>
         </div>
         <div data-style-experience="desktop"
-            [attr.data-style-open]="isDisplaying(2) ? 'open' : 'closed'"
+            [attr.data-style-open]="isDisplaying(3) ? 'open' : 'closed'"
             style="background-image: url(../../../assets/staring.jpg)"
             (click)="toggleDescription(3)">
             <div>
                 <h1>Allstate Insurance</h1>
                 <h4>Application Developer - Backend System and Software Enhancements</h4>
             </div>
-            <div desc *ngIf="isDisplaying(2)">
+            <div desc *ngIf="isDisplaying(3)">
                 <div>May - August 2022, Toronto CAN</div>
                 <div><i tech class="fab fa-python"></i><i tech class="fab fa-java"></i></div>
                 As an Application Developer Intern, I worked on backend system enhancements 
@@ -83,26 +83,26 @@
                 saving over two hours per week, and created C# software to digitize paper documents 
                 using image and text recognition for data extraction and validation.
             </div>
-            <i arrow *ngIf="!isDisplaying(2)" class="fas fa-chevron-down"></i>
-            <i arrow *ngIf="isDisplaying(2)" class="fas fa-chevron-up"></i>
+            <i arrow *ngIf="!isDisplaying(3)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(3)" class="fas fa-chevron-up"></i>
         </div>
         <div data-style-experience="desktop"
-            [attr.data-style-open]="isDisplaying(3) ? 'open' : 'closed'"
+            [attr.data-style-open]="isDisplaying(4) ? 'open' : 'closed'"
             style="background-image: url(../../../assets/irelandlandscape.jpeg)"
             (click)="toggleDescription(4)">
             <div>
                 <h1>Benevity</h1>
                 <h4>Software Developer - Slack Application</h4>
             </div>
-            <div desc *ngIf="isDisplaying(3)">
+            <div desc *ngIf="isDisplaying(4)">
                 <div>May - August 2021, Toronto CAN</div>
                 <div><i tech class="fab fa-slack"></i><i tech class="fab fa-python"></i><i tech class="fas fa-database"></i><i tech class="fab fa-aws"></i></div>
                 As the creative mind behind a company-wide Slack application, I designed and developed a dynamic suite of Python-powered commands. This innovative solution 
                 sparked a remarkable 28% surge in employee engagement with charitable causes and philanthropic initiatives.
                 I also leveraged Terraform for automated cloud infrastructure management, integrating seamlessly into Benevity's Slack workspace.
             </div>
-             <i arrow *ngIf="!isDisplaying(3)" class="fas fa-chevron-down"></i>
-            <i arrow *ngIf="isDisplaying(3)" class="fas fa-chevron-up"></i>
+             <i arrow *ngIf="!isDisplaying(4)" class="fas fa-chevron-down"></i>
+            <i arrow *ngIf="isDisplaying(4)" class="fas fa-chevron-up"></i>
         </div>
     </div>
     <app-footer-links></app-footer-links>
